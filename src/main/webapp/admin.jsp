@@ -70,9 +70,10 @@
                   <thead class="thead bg-primary text-white">
                     <tr>
                       <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">Code</th>
+                      <th scope="col">Nom du produit</th>
+                      <th scope="col">Prix</th>
+                      <th scope="col">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -82,6 +83,9 @@
                       <td><%= p.getCode() %></td>
                       <td><%= p.getNom() %></td>
                       <td><%= p.getPrice() %></td>
+                      <td><a href="http://localhost:8080/servlet-0.0.1-SNAPSHOT/detailsProduit?code=<%= p.getCode() %>" >Visualiser</a>
+                      <a href="http://localhost:8080/servlet-0.0.1-SNAPSHOT/deleteProduit?code=<%= p.getCode() %>" >Supprimer</a></td>
+                      
                     </tr>
                   <%
                     }

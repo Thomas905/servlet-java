@@ -39,4 +39,24 @@
     <servlet-name>CreationUsers</servlet-name>
     <url-pattern>/creationUsers</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DetailsProduit</display-name>
+    <servlet-name>DetailsProduit</servlet-name>
+    <servlet-class>com.nextu.app.servlets.DetailsProduit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetailsProduit</servlet-name>
+    <url-pattern>/detailsProduit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteProduit</display-name>
+    <servlet-name>DeleteProduit</servlet-name>
+    <servlet-class>com.nextu.app.servlets.DeleteProduit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProduit</servlet-name>
+    <url-pattern>/deleteProduit</url-pattern>
+  </servlet-mapping>
 </web-app>
